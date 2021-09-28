@@ -123,7 +123,7 @@ actual <- as.data.frame(actual)
 for(a in 1:21){
   actual[1,a] <- prediction(a,1) #1주뒤 a번째 농산물의 예측 가격들
   actual[2,a] <- prediction(a,2) #2주뒤 a번째 농산물의 예측 가격들
-  actual[3,a] <- prediction(a,3) #2주뒤 a번째 농산물의 예측 가격들
+  actual[3,a] <- prediction(a,4) #2주뒤 a번째 농산물의 예측 가격들
 }
 colnames(actual) <-c("배추_가격(원/kg)","무_가격(원/kg)",
                      "양파_가격(원/kg)","건고추_가격(원/kg)","마늘_가격(원/kg)",
